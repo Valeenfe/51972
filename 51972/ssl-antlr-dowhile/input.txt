@@ -1,8 +1,0 @@
-x = 5;
-do {
-    x = x - 1;
-    console.log(x);
-} while (x);
-
-
-
