@@ -1,0 +1,85 @@
+// Generated from c:/Users/Valentina/ssl-antlr-dowhile/DoWhile.g4 by ANTLR 4.13.2
+// jshint ignore: start
+import antlr4 from 'antlr4';
+
+
+const serializedATN = [4,0,19,95,6,-1,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,
+4,7,4,2,5,7,5,2,6,7,6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,
+12,2,13,7,13,2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,1,0,1,0,1,
+0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,2,1,3,1,3,1,4,1,4,1,5,1,5,1,6,1,6,1,6,1,
+6,1,6,1,6,1,6,1,6,1,7,1,7,1,8,1,8,1,8,1,8,1,9,1,9,1,10,1,10,1,11,1,11,1,
+12,1,12,1,13,1,13,1,14,1,14,1,15,1,15,1,16,1,16,1,17,1,17,1,18,4,18,90,8,
+18,11,18,12,18,91,1,18,1,18,0,0,19,1,1,3,2,5,3,7,4,9,5,11,6,13,7,15,8,17,
+9,19,10,21,11,23,12,25,13,27,14,29,15,31,16,33,17,35,18,37,19,1,0,3,2,0,
+65,90,97,122,1,0,48,57,3,0,9,10,13,13,32,32,95,0,1,1,0,0,0,0,3,1,0,0,0,0,
+5,1,0,0,0,0,7,1,0,0,0,0,9,1,0,0,0,0,11,1,0,0,0,0,13,1,0,0,0,0,15,1,0,0,0,
+0,17,1,0,0,0,0,19,1,0,0,0,0,21,1,0,0,0,0,23,1,0,0,0,0,25,1,0,0,0,0,27,1,
+0,0,0,0,29,1,0,0,0,0,31,1,0,0,0,0,33,1,0,0,0,0,35,1,0,0,0,0,37,1,0,0,0,1,
+39,1,0,0,0,3,42,1,0,0,0,5,48,1,0,0,0,7,50,1,0,0,0,9,52,1,0,0,0,11,54,1,0,
+0,0,13,56,1,0,0,0,15,64,1,0,0,0,17,66,1,0,0,0,19,70,1,0,0,0,21,72,1,0,0,
+0,23,74,1,0,0,0,25,76,1,0,0,0,27,78,1,0,0,0,29,80,1,0,0,0,31,82,1,0,0,0,
+33,84,1,0,0,0,35,86,1,0,0,0,37,89,1,0,0,0,39,40,5,100,0,0,40,41,5,111,0,
+0,41,2,1,0,0,0,42,43,5,119,0,0,43,44,5,104,0,0,44,45,5,105,0,0,45,46,5,108,
+0,0,46,47,5,101,0,0,47,4,1,0,0,0,48,49,5,40,0,0,49,6,1,0,0,0,50,51,5,41,
+0,0,51,8,1,0,0,0,52,53,5,59,0,0,53,10,1,0,0,0,54,55,5,61,0,0,55,12,1,0,0,
+0,56,57,5,99,0,0,57,58,5,111,0,0,58,59,5,110,0,0,59,60,5,115,0,0,60,61,5,
+111,0,0,61,62,5,108,0,0,62,63,5,101,0,0,63,14,1,0,0,0,64,65,5,46,0,0,65,
+16,1,0,0,0,66,67,5,108,0,0,67,68,5,111,0,0,68,69,5,103,0,0,69,18,1,0,0,0,
+70,71,5,123,0,0,71,20,1,0,0,0,72,73,5,125,0,0,73,22,1,0,0,0,74,75,5,43,0,
+0,75,24,1,0,0,0,76,77,5,45,0,0,77,26,1,0,0,0,78,79,5,47,0,0,79,28,1,0,0,
+0,80,81,5,42,0,0,81,30,1,0,0,0,82,83,5,95,0,0,83,32,1,0,0,0,84,85,7,0,0,
+0,85,34,1,0,0,0,86,87,7,1,0,0,87,36,1,0,0,0,88,90,7,2,0,0,89,88,1,0,0,0,
+90,91,1,0,0,0,91,89,1,0,0,0,91,92,1,0,0,0,92,93,1,0,0,0,93,94,6,18,0,0,94,
+38,1,0,0,0,2,0,91,1,6,0,0];
+
+
+const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
+
+const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
+
+export default class DoWhileLexer extends antlr4.Lexer {
+
+    static grammarFileName = "DoWhile.g4";
+    static channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+	static modeNames = [ "DEFAULT_MODE" ];
+	static literalNames = [ null, "'do'", "'while'", "'('", "')'", "';'", "'='", 
+                         "'console'", "'.'", "'log'", "'{'", "'}'", "'+'", 
+                         "'-'", "'/'", "'*'", "'_'" ];
+	static symbolicNames = [ null, "DO", "WHILE", "LPAREN", "RPAREN", "SEMICOLON", 
+                          "EQ", "CONSOLE", "DOT", "LOG", "LBRACE", "RBRACE", 
+                          "ADD", "SUB", "DIV", "MUL", "UNDERSCORE", "LETRA", 
+                          "DIGITO", "WS" ];
+	static ruleNames = [ "DO", "WHILE", "LPAREN", "RPAREN", "SEMICOLON", "EQ", 
+                      "CONSOLE", "DOT", "LOG", "LBRACE", "RBRACE", "ADD", 
+                      "SUB", "DIV", "MUL", "UNDERSCORE", "LETRA", "DIGITO", 
+                      "WS" ];
+
+    constructor(input) {
+        super(input)
+        this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.atn.PredictionContextCache());
+    }
+}
+
+DoWhileLexer.EOF = antlr4.Token.EOF;
+DoWhileLexer.DO = 1;
+DoWhileLexer.WHILE = 2;
+DoWhileLexer.LPAREN = 3;
+DoWhileLexer.RPAREN = 4;
+DoWhileLexer.SEMICOLON = 5;
+DoWhileLexer.EQ = 6;
+DoWhileLexer.CONSOLE = 7;
+DoWhileLexer.DOT = 8;
+DoWhileLexer.LOG = 9;
+DoWhileLexer.LBRACE = 10;
+DoWhileLexer.RBRACE = 11;
+DoWhileLexer.ADD = 12;
+DoWhileLexer.SUB = 13;
+DoWhileLexer.DIV = 14;
+DoWhileLexer.MUL = 15;
+DoWhileLexer.UNDERSCORE = 16;
+DoWhileLexer.LETRA = 17;
+DoWhileLexer.DIGITO = 18;
+DoWhileLexer.WS = 19;
+
+
+

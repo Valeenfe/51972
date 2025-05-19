@@ -1,0 +1,6 @@
+a = 2;
+b = 3;
+do {
+    a = a + b;
+    console.log(a);
+} while (a);
